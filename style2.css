@@ -1,0 +1,745 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-family: 'Inter', sans-serif;
+}
+/* HEADER */
+
+.menuArea {
+    padding: 0 0;
+    display: flex;
+    justify-content: start;
+}
+.menuItems {
+    display: flex;
+    justify-content: flex-end;
+}
+.menuItems a{
+    text-decoration: none;
+}
+.menuItems ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    font-size: 0.5em;
+}/* BURGER MENU ende */
+
+header{
+    font-size: 5vw;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    padding: .5rem;
+    width: 100%;
+    height: 10vh;
+}
+.mobile {
+    display: flex;
+    justify-content:center;
+    gap: 5vw;
+    align-items: start;
+    align-content: start;
+    flex-wrap: nowrap;
+}
+
+header .mobile a:hover{
+    color: #fa831b;
+}
+header ul{
+ text-decoration: none;
+    display: none;
+}
+/* ABMELDUNG Button */
+header a{
+    color: white;
+    text-decoration: none;
+
+}
+.menuItems{
+text-align:end;
+}
+header .menuItems a:hover{
+    background-color:rgba(255, 252, 252, 0.37);
+    padding:0 2rem 0 1rem;
+    border-radius: 5px;
+}
+@media (min-width:700px){
+    header a:not(.exclude){
+    color:white;
+    text-decoration: none;
+} /* außer einem Kind alle auswählen pesudo klasse :not */
+    header li:nth-of-type(7){
+    border-radius: 20px;
+    background-color: white;
+    padding: 1rem;
+}header ul li .exclude{
+    color: black;
+}
+}
+
+
+/* HERO PINK */
+.hero{
+    background-color: rgba(242,148,226,255);
+    height: 100vh;
+    padding-top: 10vh;
+    position: relative;
+} /* WIDTH 36-WEG */
+.hero div{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10vw;
+    align-items: center; 
+}
+
+.hero div img{
+width: 65vw;
+position: relative;
+z-index: 0;
+}
+/* ORANGE Button */
+.hero button{
+    background-color: #fa831b;
+    padding: 3vh 0;
+    border-radius: 20px;
+    position: absolute;
+    top: 45%;
+    right:20%;
+    left:20%;
+box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+text-shadow: none;
+transition: all 500ms cubic-bezier(0.130, 0.370, 0.750, 0.750);
+box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.75),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.60);
+}
+.hero button:hover{
+    background-color: #f8c191;
+    padding: 4vh 0;
+    border: 1px solid;
+    box-shadow: inset 0 0 20px #f8c191, 0 0 40px #ffffff;
+    top: 45%;
+    right: 15%;
+    left: 15%;
+}
+.hero a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.hero button:hover a{
+color: rgba(0, 0, 0, 0.76);
+font-size: 1.8rem;
+font-weight: lighter;
+}
+.hero-2{
+    background-image: url(../images/hero-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+}
+@media (min-width:300px){
+    .hero div img{width: 60%;
+    }
+}
+@media (min-width:700px) {
+.hero button{
+top: 75%;
+right: 60%;
+left: 10%;
+background-color: #fa831b;
+    }
+header .burgermenu, box-icon{
+    display:none;
+}
+header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    font-size: 1.4vw;
+}
+header .mobile{
+    width: fit-content;
+}
+.liste ul{
+display: flex;
+flex-flow: row nowrap;
+align-items: center;
+list-style: none;
+background-color: black;
+gap: 1rem;
+height: 10vh;
+}
+header a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero div{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height: auto;
+}
+.hero div .pinkhero1{
+width: 50vw;
+align-self: flex-start;
+}
+.hero div .pinkhero2{
+width: 30vw;
+align-self: flex-end;
+}
+.hero button:hover{
+    background-color: #f8c191;
+    padding: 4vh 0;
+    border: 1px solid;
+    box-shadow: inset 0 0 20px #f8c191, 0 0 40px #ffffff;
+    top: 75%;
+    right: 60%;
+    left: 10%;
+}
+}
+/* WELLEN */
+.welle1{
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+    overflow:hidden;
+}
+.welle1 img{
+width: 100%;
+}
+
+
+/* GELBE SECTION */
+.gelb{
+    background-color: #f1ca46;
+    height: auto;
+    margin: -12vh 0;
+}/* margin hier- übergang nach Welle */
+article{
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+    padding:10% 20%;
+   justify-content: center;
+   align-items: center;
+  line-height: 1.5;
+  height: auto;
+}
+article p{
+    letter-spacing: 10.5;
+}
+article img{
+width: 50vw;
+aspect-ratio: 1/1;
+overflow: hidden;
+
+}
+@media (min-width:700px){
+    article img{
+    width: 50vw;
+ aspect-ratio: 1/1;
+    }
+    article{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 7% 0;
+        gap: 1rem;
+        height: fit-content;
+    }
+    .article-text{
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        line-height: 2;
+        font-size: 1.1rem;
+    }
+  }
+    
+
+/* WIE ES FUNKTIONERT SECTION GELB */
+.gelb-cards h2{
+    text-align: center;
+}
+.gelb-cards{
+padding: 1rem 0;
+display: flex;
+flex-flow: column nowrap;
+gap: 2.5rem;
+justify-content: center;
+align-items: center;
+height: fit-content;
+}
+.gelb-cards .card{
+    background-color: white;
+    width: 65vw;
+    max-height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    align-content: space-around;
+    gap: 1rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2rem;
+    line-height: 2;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+.gelb-cards .card p{
+    color: rgb(99, 98, 98);
+
+}
+
+.gelb-cards img{
+    max-width: 50vw;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+.gelb-cards h3 {
+    font-weight:900;
+}
+
+@media (min-width:800px){
+    .gelb-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+    .gelb-cards .card{
+        width: 25vw;
+        height: 70vh;
+        font-size: .6rem;
+    }
+    .gelb-cards img{
+        max-width: 18vw;
+        border-top-left-radius:20px;
+        border-top-right-radius:20px;
+    }
+}
+@media (min-width:1600px) {
+    .gelb-cards .card{
+          font-size: 1.1rem;
+    } 
+}
+
+
+/* Wir haben Sie… Branding, Apps und Webdesign */
+.gelb-cards2{
+    padding: 2rem 0 5rem 0;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    height: fit-content; 
+    background-color: #f1ca46;
+}
+.gelb-flex{
+   background-color: white;
+    width: 70%;
+    max-height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2rem 0 2rem 3.5rem;
+    line-height: 2;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+}
+.gelb-cards2 img{
+    width: 50px;
+}
+.gelb-cards2 h2{
+    width: 70%;
+    text-align: center;
+}
+
+@media (min-width:900px){
+    .gelb-flex{
+width: 35%;
+    } 
+}
+/* WELLE -2 */
+.welle2{
+width: 100%;
+    height: 18vh;
+    margin:10vh 0;
+    overflow:hidden;
+}
+.welle2 img{
+width: 100%;
+}
+
+
+/* SECTION WEISS */
+.weiss-cards img{
+    width: 70vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 2px 0 rgb(0, 0, 0);
+    }
+
+.weiss .weiss-cards{
+display: grid;
+grid-template-columns:1fr;
+grid-template-rows: repeat(6,1fr);
+place-items: center center;
+padding: 1rem;
+}
+.weiss-cards div{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+    line-height: 1.6;
+   width: 70vw;
+}
+@media (min-width:700px){
+.weiss .weiss-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,2fr);
+gap: 5rem;
+padding-top: 5vh;
+    }
+    .weiss-cards img{
+        width: 20vw;
+        }
+    .weiss-cards div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 50vh;
+        width: auto;
+        }
+}
+@media (min-width:900px){
+    .weiss-cards div{
+        width: 30vw;
+    }
+}
+
+/* ZUVOR MIT GEARBEITET */
+.kunden{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.kunden h6{
+    color: grey;
+    font-size:1rem;
+    padding-bottom: 1rem;
+}
+.kunden img{
+    max-width: 50vw;
+}
+@media (min-width:700px){
+    .kunden{
+
+    }
+}
+
+.welle3{
+    width: 100%;
+    height: 18vh;
+    margin: 0;
+    overflow:hidden;
+}
+.welle3 img{
+width: 100%;
+}
+/* PINK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.pink{
+    background-color: #f294e2;
+    height:max-content;
+    margin: -13vh 0;
+    padding: 15vh 0;
+}
+.pink .grid{
+    display: grid;
+    grid-template-columns: 70vw;
+    grid-template-rows: repeat(4,1fr);
+    justify-content: center;
+    align-content: center;
+    gap: 3rem;
+}
+.pink .grid .grid-element{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items:center;
+} 
+.pink .grid .grid-element h3{
+    justify-self: start;
+    padding: 1.7rem 0 .5rem 0;
+}
+
+.pink .grid .grid-element img{
+    width: 50vw;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+@media (min-width:700px){
+    .pink .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        padding-top: 5vh;
+        padding-bottom: 3rem;
+        justify-items: center;
+    }
+    .pink .grid .grid-element img{
+        width: 20vw;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border: 2px solid black;
+        border-radius: 20px;
+    
+    }
+    .pink .grid .grid-element{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: auto;
+max-width: 30vw;
+    } 
+}
+
+/* HERO-2 */
+.hero-2{
+    background-image: url(../images/hero-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.schwarz-div{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 90vw;
+    height: 45%;
+    border-radius: 10px;
+    top: 15vh;
+    right: 3vw;
+    text-align: center;
+    padding: 2rem;
+    }
+    .schwarz-div h4{
+        font-size: 150%;
+        padding-bottom: 0.5rem;
+    }
+    .schwarz-div button{
+        background-color: #fa831b;
+        padding: 1rem 10vw;
+        border-radius: 8px;
+    }
+    
+    .schwarz-div button:hover{
+        background-color: #f79c4c;
+        padding: .5rem 5vw;
+        border-radius: 8px;
+        transition: all 500ms cubic-bezier(0.130, 0.370, 0.750, 0.750);
+        font-size: 60%;
+    }
+    .schwarz-div a{
+        text-decoration: none;
+        color: black;
+        font-size: 145%;
+        font-weight: 900;
+    }
+
+
+/* PINK!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!HASE!!!!!!!!!!!!!!!!!! */
+.article2{
+    padding: 2rem;
+    background-color: #f294e2;
+    position: relative;
+    padding: 3rem;
+}
+.article2 p{
+    position: relative;
+}
+.article p:nth-of-type(2){
+gap: 0;
+width: 50%;
+}
+.article2 img{
+width: 30vw;
+position: absolute;
+bottom: 0;
+right: 0;
+}
+@media (min-width:700px){
+    .article2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .article2 img{
+        width: 20vw;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        }
+    .article2-text{
+        width: 60%;
+        text-align: center;
+    }
+}
+/* LOSLEGEN */
+.loslegen{
+    text-align: center;
+}
+.loslegen button{
+    background-color: #ff6600;
+    padding: 2rem 6rem;
+    border-radius: 18px;
+    font-size: 2rem;
+    box-shadow:1px 10px 16px 0 rgba(0, 0, 0, 0.75),
+    0px 0px 1px 0;
+}
+.loslegen button:hover{
+    background-color: #f8c191;
+}
+.loslegen a{
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+
+
+/* WELLE */
+.welle4{
+    width: 100%;
+    height: 18vh;
+    margin: 0;
+    overflow:hidden;
+}
+.welle4 img{
+width: 100%;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: #f1ca46;
+    min-height: 30vh;
+    margin: -30vh 0;
+}
+@media (min-width:700px){
+
+    .footer-links {
+        padding: 6rem 5rem 0 0;
+    }
+}
+.footer-links ul{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:start;
+    gap: .5rem;
+   padding: 1rem;
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.footer-links a:hover {
+color: white;
+}
+.footer-2{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.445);
+    text-align: center;
+    background-color: black;
+}
+.footer-2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.footer-2 a:hover{
+    font-weight: bold;
+}
+.footer-2 p{
+    color: rgb(255, 255, 255);
+}
+
+/* @media (min-width: 350px){
+{
+
+}
+}
+ */
+
+
+
+/* FRAGEN:
+1.GELÖST! BUTTON Siehe Pläne ganz oben, beim scrollen geht nicht unter dem Header sondern umgekehrt
+alles was positions absolute/relative-AUCH SO Lösung- für Header -Z-INDEX 2 EINGEBEN
+
+2.html zeile 182, wie mache ich dass es von links schon anfängt.ist kuŕz und im zentrum deswegen!in css zeilen 300-310
+
+3.  Button mit Link! wie kann man auf den button ganzen link klicken
+
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- selbstgemachter Burger von Albert --> */
+
+/* .burger2{
+display: flex;
+flex-direction: column;
+}
+.burger2 .linie{
+width: 40px;
+height: 5px;
+background-color: pink;
+margin: 5px;
+} */
+
+
+/* 
+Standard Auflösungen von Smartphones und Tablets:
+
+Smartphones:
+320px bis 480px
+Tablets:
+768px bis 1024px
+Computer-Desktop:
+1024px+ */
+

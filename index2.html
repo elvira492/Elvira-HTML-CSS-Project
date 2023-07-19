@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <script defer
+    src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script><!-- JS Alpine für BURGER Menu -->
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script><!-- https://boxicons.com/usage --> <!-- icons -erste Möglichkeit -->
+    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"> --><!-- BOOTSTRAP link+ in terminal npm init -y +npm i bootstrap -->
+
+</head> 
+<body  x-data="{showMessage: false, currentPage: 'p1'}"
+class="pageIndex2"><!-- JS Alpine -->
+<header>
+    <div class="mobile">
+    <a href="#top">Super Hello</a>
+
+<!-- EDWARDS BURGER MENÜ mit JS Alpine -->
+<!-- <section class="burgermenu">
+    <h2>Burger menu</h2>
+    <div class="menuArea">
+        <div @click="showMessage = !showMessage ">🍔</div>
+    </div>
+    <div class="menuItems" x-show="showMessage">
+        <ul>
+            <li><a href="form.html">form</a></li>
+            <li>222</li>
+            <li>333</li>
+        </ul>
+    </div>
+</section> -->
+    <section class="burgermenu">
+    <div class="menuArea">
+        <div @click="showMessage = !showMessage ">
+            <box-icon size="lg" color="white" name='menu' animation="fade-right" type="logo"></box-icon>
+        </div>
+    </div>
+    <div class="menuItems" x-show="showMessage">
+        <ul>
+            <li><a href="#vorteile1">Vorteile</a></li>
+            <li><a href="#arbeit">Unsere Arbeit</a></li>
+            <li><a href="#wieesfunktioniert">Wie es funktioniert</a></li>
+            <li><a href="">Preisgestaltung</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Kontakt</a></li>
+            <li><a class="exclude" href="">Anmeldung</a></li>
+    </ul>
+    </div>
+    </section>
+
+<!--     <box-icon size="lg" color="white" name='menu' animation="fade-right" type="logo"></box-icon>boxicons.com -->
+    <div class="liste">
+    <ul>
+            <li><a href="#vorteile1">Vorteile</a></li>
+            <li><a href="#arbeit">Unsere Arbeit</a></li>
+            <li><a href="#wieesfunktioniert">Wie es funktioniert</a></li>
+            <li><a href="">Preisgestaltung</a></li>
+            <li><a href="">FAQs</a></li>
+            <li><a href="">Kontakt</a></li>
+            <li><a class="exclude" href="">Anmeldung</a></li>
+    </ul>
+    </div>
+    </div>
+</header>
+<main>
+    <section class="hero">
+        <div>
+            <img class="pinkhero1" src="../images/Bildschirmfoto von 2023-07-11 14-33-59.png" alt="">
+            <img class="pinkhero2" src="../images/robot-1.png"  alt="">
+        </div>
+        <button>
+            <a href="#" target="_blank">Siehe Pläne</a>
+        </button>
+    </section>
+
+    <section class="welle1">
+        <img src="../images/welle.jpg" alt="">
+    </section>
+<!-- GELB -->
+    <section class="gelb">
+        <article>
+            <div class="article-text">  
+                <h2>Die Zukunft der Designdienstleistungen</h2>
+            <p>Benötigen Sie atemberaubendes Grafikdesign, intuitive UI/UX oder auffälliges Webdesign? Willkommen zuhause. Wir sind Super Hello, Ihr Designpartner für eine monatliche Pauschalgebühr. Bei uns geht es darum, gute Kreativität auf eine neue Art und Weise zu liefern.
+            </div>
+            
+            <img src="../images/robot3.png" alt="">            
+            </p>
+         </article>
+<a id="wieesfunktioniert"></a> <!-- ANKER -->
+      <h2 style="text-align: center;">Wie es funktioniert</h2>
+        <div class="gelb-cards">
+             
+            <div class="card">
+                <img src="../images/gelbcards1.jpg" alt="">
+                <h3>Abonnieren</h3>
+                <p>Starten Sie Ihr Designabenteuer mit unserem Monatsabonnement. Für nur 2.000 US-Dollar erhalten Sie unbegrenzte Prämien für erstklassige Designarbeiten.</p>
+            </div>
+            <div class="card">
+                <img src="../images/gelbcards2.jpg" alt="">
+                <h3>Anfrage
+                </h3>
+                <p>Alles klar, du bist dabei! Jetzt ist es an der Zeit, uns Ihre Designaufgaben zu überlassen. Brauchen Sie ein Branding-Konzept? Ein elegantes Landingpage-Design? Oder vielleicht eine herausragende dreifach gefaltete Broschüre? Kein Schweiß. Kommen Sie einfach </p>
+            </div>
+            <div class="card">
+                <img src="../images/gelbcards3.jpg" alt="">
+                <h3>Rezension</h3>
+                <p>Halten Sie sich fest! In nur 48 Stunden erhalten Sie einen ersten Blick auf Ihr fertiges Design. Und wenn es nicht Liebe auf den ersten Blick ist, kein Grund zur Sorge! Wir können es optimieren und optimieren, bis es genau richtig ist – das ist das Schöne an unbegrenzten Überarbeitungen.</p>
+            </div>
+        </div>
+
+        <div class="gelb-cards2">
+            <h2>Wir haben sie… Branding, Apps und Webdesign</h2>
+            <div class="gelb-flex">
+                <div>
+                    <h3>Design</h3>
+                    <li>Branding</li>
+                    <li>Broschüren</li>
+                    <li>Pitch Decks</li>
+                    <li>Soziale Medien</li>
+                </div>
+                <div>
+                    <h3>Netz</h3>
+                    <li>Landing Pages</li>
+                    <li>Marketing-Websites</li>
+                    <li>Responsive Design</li>
+                    <li>Interaktionen</li>
+                </div>
+                <div>
+                    <h3>Benutzeroberfläche/UX</h3>
+                    <li>App-Design</li>
+                    <li>Wireframing</li>
+                    <li>Prototyping</li>
+                    <li>High-Fidelity-Prototypen</li>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="welle2">
+        <img src="../images/welle-2.jpg" alt="">
+        <a id="vorteile1"></a> <!-- ANKER -->
+    </section>
+    
+   <h2 style="text-align: center;">Vorteile der Mitgliedschaft</h2>
+    <section class="weiss">
+        <div class="weiss-cards">
+            <div>
+                <img src="../images/DcUKnxDzgGSahkEziduTeqivxnA.jpg" alt="">
+                <h3>Erfahrener Profi zu Ihren Diensten</h3>
+                <p>Mit einem soliden Jahrzehnt im Designgeschäft und großen Namen wie Disney, CGV und Zoos Victoria im Portfolio werden Sie sich freuen. Erwarten Sie nichts weniger als erstklassige, professionelle Designs für Ihr Unternehmen.</p>
+            </div>
+            <div>
+                <img src="../images/iS7gXP0zi5VvAX7S9J19TCmCghw.jpg" alt="">
+                <h3>Unbegrenzte Wiederholungen und Wunschlisten</h3>
+                <p>Mit einer einzigen monatlichen Rate haben Sie die Möglichkeit, bei unbegrenzten Designwünschen und Überarbeitungen das Sagen zu haben. Optimieren Sie weiter, bis Ihr Design den optimalen Punkt erreicht. Sie träumen davon, wir entwerfen es!</p>
+            </div>
+            <div>
+                <img src="../images/xtt075u2W5Dq1bjisAD2wlFab6A.jpg" alt="">
+                <h3>Speedy Gonzales</h3>
+                <p>Wer wartet schon gern, oder? Aus diesem Grund werden Ihnen die meisten Designaufgaben innerhalb eines 48-Stunden-Fensters übertragen. Ihre Projekte rasen weiter, ohne Zwischenstopps.</p>
+            </div>
+            <div>
+                <img src="../images/JEdoX9HFMcHtmCDhPJDFNrfBE.jpg" alt="">
+                <h3>Big Bang für Ihr Geld</h3>
+                <p>Holen Sie sich erstklassiges Design auf Agenturniveau zu einem Preis, der Sie überzeugen wird. Für eine monatliche Pauschalgebühr erhalten Sie hochwertige Designarbeiten, die Sie bei Agenturen der alten Schule ein Vermögen kosten würden.</p>
+            </div>
+            <div>
+                <img src="../images/9FDvJv8Snx3amS4hvdw2dyn8iNk.jpg" alt="">
+                <h3>Keine Meetings … jemals</h3>
+                <p>Wir haben den Aufwand reduziert und den Prozess optimiert. Sie teilen uns Ihre Vision und Anforderungen mit und wir machen uns an die Arbeit, was zu kürzeren Bearbeitungszeiten führt.</p>
+            </div>
+            <div>
+                <img src="../images/n6TN2nfCksRW54hFAZgIoV9SSg.jpg" alt="">
+                <h3>Exklusiven Zugang</h3>
+                <p>Wir beschränken unseren Service auf nur eine Handvoll Kunden pro Monat und stellen sicher, dass jeder Kunde die persönliche Betreuung und Qualität erhält, die er verdient. Wir sind nicht nur ein weiterer Designdienstleister – wir sind Ihr engagierter Designpartner.</p>
+            </div>
+        </div>
+
+        <div class="kunden">
+            <h6>Zuvor mit gearbeitet</h6>
+            <img src="../images/Bildschirmfoto von 2023-07-12 13-58-30.png" alt="">
+        </div>
+       
+    </section>
+
+<!-- PINK -->
+
+<section class="welle3"> 
+    <a id="arbeit"></a> <!-- ANKER -->
+    <img src="../images//welle-3.jpg" alt="">
+</section>
+
+    <section class="pink">
+        <h2 style="text-align: center;">Was wir gemacht haben <br> ...</h2>
+        <div class="grid">
+            <div class="grid-element">
+                <img src="../images/grid-1.jpg" alt="">
+                <h3>Benutzeroberfläche/UX</h3>
+                <p>Eine benutzerfreundliche, intuitive App-Oberfläche und ein Icon-Set.</p>
+            </div>
+            <div class="grid-element">
+                <img src="../images/grid-2.jpg" alt="">
+                <h3>Branding und Pitch-Deck</h3>
+                <p>Ein überzeugendes, visuell ansprechendes Marken- und Pitch-Deck, das geschaffen wurde, um Investitionen für „Iron Horizons“, eine fesselnde neue Miniserie, anzuziehen.</p>
+            </div>
+            <div class="grid-element">
+                <img src="../images/grid-3.jpg" alt="">
+                <h3>Landingpage</h3>
+                <p>Eine fesselnde Landingpage, die so gestaltet ist, dass sie Hype und Spannung rund um ein bevorstehendes Metaverse-Projekt erzeugt.</p>
+            </div>
+            <div class="grid-element">
+                <img src="../images/grid-4.png" alt="">
+                <h3>Grafik-Design</h3>
+                <p>Branding für eine Fitness-App</p>
+            </div>
+        </div>
+<!-- HERO 2 -->
+        <div class="hero-2">
+            <div class="schwarz-div">
+                <h4>Weitere Beispiele ansehen</h4>
+                <button><a href="#">Mehr ansehen</a> </button>
+            </div>
+        </div>
+<!-- PREISE -->
+        <article class="article2">
+            <div class="article2-text">
+               <h2>Fangen Sie nicht einfach an, sondern legen Sie los</h2>
+            <p>Mit einer einzigen monatlichen Rate haben Sie die Möglichkeit, bei unbegrenzten Designwünschen und Überarbeitungen das Sagen zu haben</p>
+     
+            <h3>Sichern Sie sich Ihren Slot</h3>
+            <p>Wir schätzen jeden unserer Kunden und sind bestrebt, außergewöhnlichen Service zu bieten. Um unsere hohen Standards aufrechtzuerhalten, eröffnen wir jeden Monat nur eine Handvoll Plätze. Dieser Ansatz stellt sicher, dass  Sie die Aufmerksamkeit und den fachkundigen  </p> <p>Service erhalten, den Sie verdienen.</p>      
+            </div>
+            
+        <img src="../images/robot-2.png" alt="">
+        </article>
+        <section class="loslegen">
+            <button>
+                <a href="#">Loslegen</a>
+            </button>
+        </section>
+<!-- WELLE-->
+<section class="welle4">
+    <img src="../images/welle.jpg" alt="">
+</section> 
+</main>
+<footer> 
+    <div class="footer-links">
+        <ul>
+            <li><a href="#vorteile1">Vorteile</a></li>
+            <li><a href="#arbeit">Unsere Arbeit</a></li>
+            <li><a href="#wieesfunktioniert">Wie es funktioniert</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Preisgestaltung</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+    <div class="footer-2">
+        <p>© 2023 Super Hallo</p>
+        <a href="#">Datenschutz-Bestimmungen</a>
+    </div>
+</footer>
+
+</body>
+</html>
+
+    <!-- selbstgemachter Burger von Albert -->
+
+<!--     <div class="burger2">
+        <div class="linie"></div>
+        <div class="linie"></div>
+        <div class="linie"></div>
+    </div> -->

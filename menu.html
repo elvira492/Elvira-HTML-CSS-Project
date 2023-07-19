@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    	<script defer
+			src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{showMessage: false, currentPage: 'p1'}"
+class="pageSubmenu">
+    
+<section class="burgermenu">
+    <h2>Burger menu</h2>
+    <div class="menuArea">
+        <div @click="showMessage = !showMessage ">🍔</div>
+    </div>
+    <div class="menuItems" x-show="showMessage">
+        <ul>
+            <li><a href="form.html">form</a></li>
+            <li>222</li>
+            <li>333</li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>
