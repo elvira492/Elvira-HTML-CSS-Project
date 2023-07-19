@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
 
     <script defer
     src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script><!-- JS Alpine für BURGER Menu -->
@@ -22,7 +22,6 @@
 <body  x-data="{showMessage: false, currentPage: 'p1'}"
 class="pageIndex2"><!-- JS Alpine -->
 <header>
-    <div class="mobile">
     <a href="#top">Super Hello</a>
 
 <!-- EDWARDS BURGER MENÜ mit JS Alpine -->
@@ -42,7 +41,8 @@ class="pageIndex2"><!-- JS Alpine -->
     <section class="burgermenu">
     <div class="menuArea">
         <div @click="showMessage = !showMessage ">
-            <box-icon size="lg" color="white" name='menu' animation="fade-right" type="logo"></box-icon>
+            <box-icon size="lg" color="white" name='menu' animation="fade-right" type="logo" x-show="!showMessage"></box-icon>
+            <div x-show="showMessage" >🍔</div>
         </div>
     </div>
     <div class="menuItems" x-show="showMessage">
@@ -69,7 +69,6 @@ class="pageIndex2"><!-- JS Alpine -->
             <li><a href="">Kontakt</a></li>
             <li><a class="exclude" href="">Anmeldung</a></li>
     </ul>
-    </div>
     </div>
 </header>
 <main>
