@@ -55,6 +55,7 @@ position: absolute;
 top: 3vh;
 right: -8vw;
 background-color: rgba(245, 245, 245, 0.308);
+
 }
 .menuItems a{
     color:black;
@@ -64,11 +65,12 @@ background-color: rgba(245, 245, 245, 0.308);
 header .menuItems a:hover{
     color: white;
 }
-.menuArea div>div{
-position: absolute;
+.menuArea {
+    position: absolute;
     top: -5vh;
-    right: 1vw;
+    right: 2vw;
 }
+
 @media (min-width:700px){
     header a:not(.exclude){
     color:white;
