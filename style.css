@@ -12,10 +12,8 @@
 .burgermenu {
   position: absolute;
   right: 10%;
-  bottom: 10%;
+  bottom: 20%;
 }
-
-
 .menuItems ul{
     display: flex;
     flex-direction: column;
@@ -30,14 +28,13 @@ header{
     z-index: 2;
     padding: .5rem;
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     display: flex;
     justify-content:space-around;
     align-items: center;
     align-content: center;
     flex-wrap: nowrap;
 }
-
 
 header .mobile a:hover{
     color: #fa831b;
@@ -54,15 +51,23 @@ header a{
 
 .menuItems{
 text-align:end;
-background-color: #f294e2;
 position: absolute;
-top: 5vh;
-right: 1vw;
+top: 3vh;
+right: -8vw;
+background-color: rgba(245, 245, 245, 0.308);
+}
+.menuItems a{
+    color:black;
+    font-weight: bold;
+    line-height: 2;
 }
 header .menuItems a:hover{
-    background-color:rgba(255, 252, 252, 0.37);
-    padding:0 2rem 0 1rem;
-    border-radius: 5px;
+    color: white;
+}
+.menuArea div>div{
+position: absolute;
+    top: -5vh;
+    right: 1vw;
 }
 @media (min-width:700px){
     header a:not(.exclude){
