@@ -69,6 +69,7 @@ header .menuItems a:hover{
     position: absolute;
     top: -5vh;
     right: 2vw;
+    height: 10vh;
 }
 
 @media (min-width:700px){
